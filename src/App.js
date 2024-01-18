@@ -4,6 +4,7 @@ import { html } from "@codemirror/lang-html";
 import { css } from "@codemirror/lang-css";
 import Navbar from "./components/Navbar";
 import Result from "./components/Result";
+import Console from "./components/Console";
 import { useCallback } from "react";
 import CodeMirror from "@uiw/react-codemirror";
 
@@ -42,7 +43,7 @@ function App() {
       <Navbar />
 
       {/* main content  */}
-      <div className=" p-2">
+      <div className="p-2">
         {/* Editor  */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
           {/* Html Editor */}
@@ -89,6 +90,8 @@ function App() {
 
         {/* Result  */}
         <Result srcCode={srcCode} />
+        {/* Console Output  */}
+        <Console />
       </div>
     </div>
   );
