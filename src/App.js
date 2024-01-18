@@ -49,7 +49,7 @@ function App() {
           <div className="bg-[#282c34] p-4 rounded-lg shadow">
             <h2 className="text-lg font-semibold mb-2 text-white">HTML</h2>
             <CodeMirror
-              className="text-xl border-gray-700 border rounded-md"
+              className="text-xl p-1 border-gray-700 border rounded-md"
               value={html_edit}
               height="342px"
               theme="dark"
@@ -62,7 +62,7 @@ function App() {
           <div className="bg-[#282c34] p-4 rounded-lg shadow">
             <h2 className="text-lg font-semibold mb-2 text-white">CSS</h2>
             <CodeMirror
-              className="text-xl border-gray-700 border"
+              className="text-xl p-1 border-gray-700 border rounded-md"
               value={css_edit}
               height="342px"
               theme="dark"
@@ -77,7 +77,7 @@ function App() {
               JavaScript
             </h2>
             <CodeMirror
-              className="text-xl border-gray-700 border"
+              className="text-xl p-1 border-gray-700 border rounded-md"
               value={js_edit}
               height="342px"
               theme="dark"

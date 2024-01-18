@@ -1,14 +1,11 @@
 import React from "react";
 
 function Result({ srcCode }) {
+  console.log( srcCode ); 
   return (
     <div>
-      {srcCode ===
-      `<html>
-            <body></body>
-            <style></style>
-            <script></script>
-    </html>` ? (
+      {srcCode !==
+      '' ? (
         <div className="bg-[#282c34] p-4 shadow mt-4 rounded-lg">
           <h2 className="text-lg font-semibold mb-2 text-white text-center">
             Result
